@@ -1,0 +1,122 @@
+
+#topbox{
+    margin-left: auto;
+    margin-right: auto;  
+    height: 320px;
+    width: 1050px;
+    background-color: white;  
+}
+
+#topleiste {
+    background-color: steelblue;
+    padding:2px 2px 5px 2px;
+    width: 100%;
+    float: left;
+}
+
+#bildlinksoben{
+    float: left;
+    margin: 0px 25px 0px 5px;
+
+}
+
+#topleiste li {
+    list-style: none;
+    float: left;
+}
+
+#topleiste a:link {
+    color:white;
+    font-size: 18px;
+    padding: 10px 5px 1px 5px;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    background-color: #DCDCDC;
+}
+
+
+
+body{
+    background-image: url(https://archive.is/yYaom/07d2bd203ca4b688a3cbd2f71796d1b59c6cad54.jpg);
+}
+.festebreite {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+#ardbild{
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/ARD.de_Logo.svg/2000px-ARD.de_Logo.svg.png);
+    width: 200px;
+
+
+}
+
+#suchfeld{
+    float: right;
+    position: relative;
+    top: -20px;
+    left: -60px;
+    
+}
+
+
+#suchfeld input {
+    height: 20px;
+    background-image: url(http://www.ard.de/pool/img/base/icon/lupe_gross.png);
+    background-position: right;
+    height: 30px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+
+}
+
+#blauerbalken{
+    background-color: 0074cdf;
+    height: 20px;
+    margin: 5px;
+    padding: 2px;
+}
+
+p{
+    margin: 3px;
+}
+
+
+#mittlererblock{
+    width: 1050px;
+    height: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: white;
+
+
+}
+
+.mittlererbloecke{
+    width: 330px;
+    margin: 10px;
+    float: left;
+    overflow: auto;
+
+}
+
+
+#grauerbalken{
+    background-color: #516384;
+    width: 296px;
+    padding: 2px;
+    margin-top: 1px;
+
+}
+
+#textmitte{
+
+}
