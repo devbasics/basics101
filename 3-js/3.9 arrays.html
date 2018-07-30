@@ -1,0 +1,43 @@
+<html>
+
+
+    <head>
+
+        <title>JavaScript</title>
+
+    </head>
+
+        <body>
+
+                <input type="text" id="inhalt">
+                <button id="ArrayButton">Senden</button>
+
+                <script type="text/JavaScript">
+
+                var Array = new Array();
+                Array[0] = "Text1";
+                Array[1] = "Text2";
+
+				var tweets = ["Test1", "Test2", "Test3", "Test4"];	
+				tweets.push("Auf gehts!");
+				
+				tweets.splice(0,0, "Test0");		
+                
+				
+				var neuerArray = tweets.jo
+				console.log(neuerArray);	
+					
+				document.getElementById("ArrayButton").onclick = function(){				
+                tweets.push(document.getElementById("inhalt").value);
+					
+					
+					
+				}
+                
+                
+                
+                </script>
+
+        </body>
+
+</html>
