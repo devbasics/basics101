@@ -1,0 +1,42 @@
+<html>
+
+
+    <head>
+
+        <title>JavaScript</title>
+
+    </head>
+
+        <body>
+                <p>Wie viele Finger halte ich hoch?</p>
+                <p><input type="text" id="unsereZahl"></p>
+                <p><button id=vergleichen>Eingabe</button></p>
+                
+                <script type="text/JavaScript">
+					
+                    var randomNumber = Math.random();
+					randomNumber = randomNumber * 6;
+					randomNumber = Math.floor(randomNumber);
+					window.onload = randomNumber;
+					
+					document.getElementById("vergleichen").onclick = function(){			
+						
+						if(document.getElementById("unsereZahl").value == randomNumber){
+							alert("Sehr gut! Du hast es erraten!");
+							randomNumber = randomNumber * 6;
+							randomNumber = Math.floor(randomNumber);
+							window.onload = randomNumber;
+							
+						}else{
+							alert("Nein, die Zahl war " +randomNumber);
+						}					
+						
+					}
+
+
+                
+                </script>
+
+        </body>
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+
+
+    <head>
+
+        <title>Schleifen</title>
+
+    </head>
+        <body>
+
+				<div id="tweetDiv">
+				
+				</div>
+			
+			
+                <script type="text/JavaScript">
+				var tweetString = "";
+									
+				var tweets = ["Eins", "Zwei", "Drei", "Vier", "Fünf"];		
+				for(var i = 0; i < tweets.length; i++){
+					
+				var i = 0;	
+					
+				while(i< tweets.length){
+					tweetString = tweetString + "<p>" + tweets[i] + "<p>";	
+					
+					i++;
+				}	
+				
+				}
+				
+				document.getElementById("tweetDiv").innerHTML = tweetString;
+					
+
+                
+                </script>
+
+        </body>
+
+</html>

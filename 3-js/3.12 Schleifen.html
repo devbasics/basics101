@@ -1,0 +1,46 @@
+<html>
+
+
+    <head>
+
+        <title>Schleifen</title>
+
+    </head>
+        <body>
+
+			<p>Wie viele Finger hältst du hoch?</p>
+			<p><input type="text" id="meineZahl"></inpu></p>
+			<button id="versuche">Rate</button>
+			
+            <script type="text/JavaScript">
+				
+				document.getElementById("versuche").onclick = function(){
+					var meineZahl = document.getElementById("meineZahl").value;
+					var erraten = false;	
+					var anzahlDerVersuche = 1;
+					
+					while(erraten == false){
+						var schaetzung = Math.random();
+						schaetzung = schaetzung * 6;
+						schaetzung = Math.floor(schaetzung);
+						
+						if(schaetzung == meineZahl){
+							erraten = true;
+							alert("Deine Zahl ist " + schaetzung + ". Ich habe " + anzahlDerVersuche + " Versuche gebraucht!")
+						}else{
+							
+						}
+						
+					}
+					
+					
+					
+					
+				}
+
+
+            </script>
+
+        </body>
+
+</html>

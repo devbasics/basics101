@@ -1,0 +1,80 @@
+<html>
+
+
+    <head>
+
+        <title>Reaktionstester</title>
+		<h1>Teste deine Reaktionsfähigkeit</h1>
+		
+		
+		<style type="text/css">
+		
+			#form{
+				width: 200px;
+				height: 200px;
+				border-radius: 150px;
+				background-color: red;
+				display: none;
+				position: relative;
+			}
+			
+			#dauer{
+				font-style: normal;
+				font-size: 30px; 
+			}
+			
+			#paragrpah{
+				font-style: normal;
+				font-size: 30px; 
+			}
+
+			
+		</style>
+
+    </head>
+        <body>
+			<p id="paragrpah">Klicke so schnell du kannst auf die Kreise. Deine Zeit wird dir dann angezeigt!</p>
+			<p id="paragrpah">Deine Zeit: <span id="dauer"></span></p>
+			<div id="form"></div>
+			
+			
+            <script type="text/JavaScript">
+			var start = new Date().getTime();
+			
+			//form wird nach einer zufaelligen zeit angezeigt
+			function makeShapeAppear(){	
+				
+				var top = Math.random() * 400;
+				var left = Math.random() * 600;
+				var size = Math.random() * 300;
+				
+				document.getElementById("form").style.top = top+"px";
+				document.getElementById("form").style.left = left+"px";
+				document.getElementById("form").style.width = size+"px";
+				document.getElementById("form").style.height = size+"px";
+				document.getElementById("form").style.backgroundColor = "#"+((1<<24)*Math.random()|0).toString(16);
+				
+				document.getElementById("form").style.display = "block";
+				start = new Date().getTime();			
+			}
+			
+			
+			function appearAfterDelay(){
+				setTimeout(makeShapeAppear, Math.random() * 2000);
+			}
+				
+			appearAfterDelay();	
+			document.getElementById("form").onclick = function(){
+				document.getElementById("form").style.display = "none";
+				var end = new Date().getTime();
+				var dauer = (end - start)/1000;
+
+				document.getElementById("dauer").innerHTML = dauer + " m/s";
+				appearAfterDelay();			
+				}
+	
+            </script>
+
+        </body>
+
+</html>
